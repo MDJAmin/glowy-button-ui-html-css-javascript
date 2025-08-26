@@ -15,9 +15,8 @@
       hsl(var(--hue) 80% 70%),
       transparent
     )
-    calc((var(--x) * 1px) - (var(--size) * 0.5))
-    calc((var(--y) * 1px) - (var(--size) * 0.5)) / var(--size) var(--size)
-    no-repeat fixed;
+    calc((var(--x) * 1px) - (var(--size) * 0.5)) calc((var(--y) * 1px) - (var(--size) * 0.5)) /
+    var(--size) var(--size) no-repeat fixed;
 }
 
 .controls {
@@ -33,8 +32,8 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   min-height: 100vh;
-  font-family: "SF Pro Text", "SF Pro Icons", "AOS Icons", "Helvetica Neue",
-    Helvetica, Arial, sans-serif, system-ui;
+  font-family: "SF Pro Text", "SF Pro Icons", "AOS Icons", "Helvetica Neue", Helvetica, Arial,
+    sans-serif, system-ui;
   background: var(--bg);
 }
 
@@ -88,4 +87,31 @@ button::after {
   border: 4px solid transparent;
   background: var(--glow);
   border-radius: 1rem;
+}
+
+.MDJAminDiv {
+  z-index: 4444;
+  position: fixed;
+  bottom: 5%;
+  left: 2%;
+}
+
+.MDJAmin {
+  text-decoration: none;
+  border-bottom: 1px dashed rgb(204, 204, 204);
+  border-top: 1px dashed rgb(204, 204, 204);
+  /* border-bottom: 1px dashed rgb(44, 44, 44); */
+  /* border-top: 1px dashed rgb(44, 44, 44); */
+  padding: 4px 0;
+  /* color: rgba(44, 44, 44, 0.525); */
+  color: rgba(204, 204, 204, 0.414);
+  font-family: monospace;
+  font-style: italic;
+  font-size: 1.1em;
+  transition: all 0.5s;
+}
+
+.MDJAmin:hover {
+  /* color: #000000; */
+  color: white;
 }
