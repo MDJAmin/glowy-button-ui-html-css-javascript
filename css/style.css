@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  user-select: none;
 }
 :root {
   --x: 0;
@@ -100,10 +101,7 @@ button::after {
   text-decoration: none;
   border-bottom: 1px dashed rgb(204, 204, 204);
   border-top: 1px dashed rgb(204, 204, 204);
-  /* border-bottom: 1px dashed rgb(44, 44, 44); */
-  /* border-top: 1px dashed rgb(44, 44, 44); */
   padding: 4px 0;
-  /* color: rgba(44, 44, 44, 0.525); */
   color: rgba(204, 204, 204, 0.414);
   font-family: monospace;
   font-style: italic;
@@ -112,6 +110,5 @@ button::after {
 }
 
 .MDJAmin:hover {
-  /* color: #000000; */
   color: white;
 }
